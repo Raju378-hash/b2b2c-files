@@ -1,0 +1,295 @@
+<div class="zet-db">
+
+    <div class="zet-toolbar pt-5 pb-3 py-lg-6">
+        <div class="container container-xxl">
+            <div class="zet-toolbar-wrapper d-flex justify-content-between align-items-center">
+                <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+                    <h5 class="mb-0 fw-medium fs-4">Profile</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="zet-content">
+        <div class="app-container container-xxl">
+            <div class="profile-card">
+                <div class="d-flex">
+                    <div class="profile-image">
+                        <img src="../../assets/img/profile-img.png" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <div class="user-name">
+                            <h2>Goutham K <i class="bi bi-patch-check-fill"></i></h2>
+                        </div>
+                        <div class="contact-details d-flex align-items-center">
+                            <p><i class="bi bi-chat-left-dots"></i> GouthamK@gmail.com</p>
+                            <p><i class="bi bi-translate"></i>English</p>
+                        </div>
+                        <div class="row justify-content-between align-items-baseline">
+                            <div class="col-md-8">
+                                <div class="d-flex">
+                                    <div class="agent-code d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="bi bi-code"></i>
+                                        </div>
+                                        <div class="agent-name">
+                                            <p>Agent code</p>
+                                            <h6>ZE123456</h6>
+                                        </div>
+                                    </div>
+                                    <div class="agent-code d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="bi bi-currency-dollar"></i>
+                                        </div>
+                                        <div class="agent-name">
+                                            <p>Currency</p>
+                                            <h6>($) USD</h6>
+                                        </div>
+                                    </div>
+                                    <div class="agent-code d-flex align-items-center">
+                                        <div class="icon">
+                                            <i class="bi bi-gender-male"></i>
+                                        </div>
+                                        <div class="agent-name">
+                                            <p>Gender</p>
+                                            <h6>Male</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="progress-card">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="">Profile Completion</label>
+                                        <label>{{slider.value}}</label>
+                                    </div>
+                                    <mat-slider>
+                                        <input matSliderThumb [(ngModel)]="value" #slider>
+                                    </mat-slider>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="zet-content">
+        <div class="app-container container-xxl">
+            <div class="level-badge-warper">
+                <div class="level-badge-header d-flex justify-content-between align-items-center">
+                    <p><strong>Congratulations!</strong> Your now Closer to the <span>Gold Seller</span> Badge.</p>
+                    <div class="header-buttons">
+                        <button mat-button class="active">Seller Level</button>
+                        <button mat-button>Trending Offers</button>
+                    </div>
+                </div>
+                <div class="level-progress-bar">
+                    <mat-slider>
+                        <input matSliderThumb [(ngModel)]="value1" #slider1>
+                    </mat-slider>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="silver-card text-center">
+                            <div class="silver-card-header">
+                                <img src="../../assets/img/silver.png" alt="">
+                                <h3>Silver</h3>
+                            </div>
+                            <div class="sliver-card-footer">
+                                <p>Sale up to <span>500 USD <br> 8% Off</span> on each bundle sale</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="silver-card gold-card text-center">
+                            <div class="silver-card-header">
+                                <img src="../../assets/img/gold.png" alt="">
+                                <h3>Gold</h3>
+                            </div>
+                            <div class="sliver-card-footer">
+                                <p>Sale up to <span>500 USD <br> 8% Off</span> on each bundle sale</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-md-4">
+                        <div class="silver-card diamond-card text-center">
+                            <div class="silver-card-header">
+                                <img src="../../assets/img/Diamond.png" alt="">
+                                <h3>Diamond</h3>
+                            </div>
+                            <div class="sliver-card-footer">
+                                <p>Sale up to <span>500 USD <br> 8% Off</span> on each bundle sale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="zet-content">
+        <div class="app-container container-xxl">
+            <div class="edite-profile-wraper">
+                <div class="edite-profile-header d-flex justify-content-between align-items-center">
+                    <h4>Edit Profile</h4>
+                    <button mat-button>Edit<i class="bi bi-pencil-square"></i></button>
+                </div>
+                <div class="edite-profile-fileds">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>First Name</label>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput placeholder="Enter First Name">
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Last Name</label>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput placeholder="Enter Last Name">
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Mobile number</label>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput placeholder="Enter Mobile number">
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Email</label>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput placeholder="Enter Email">
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-card input-radio-card">
+                                    <label>Gender</label>
+                                    <mat-radio-group aria-label="Select an option">
+                                        <mat-radio-button class="border-right" value="1">Male</mat-radio-button>
+                                        <mat-radio-button value="2">Female</mat-radio-button>
+                                      </mat-radio-group>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Company </label>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput placeholder="Enter Company ">
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="edite-profile-wraper">
+                <div class="edite-profile-header d-flex justify-content-between align-items-center">
+                    <h4>KYC Details </h4>
+                    <button mat-button>Edit<i class="bi bi-pencil-square"></i></button>
+                </div>
+                <div class="edite-profile-fileds">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Country</label>
+                                    <mat-form-field appearance="fill">
+                                        <mat-select placeholder="Select Country" >
+                                            <mat-option value="Indian"> Indian</mat-option>
+                                            <mat-option value="NRI" >United States</mat-option>
+                                          </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Business type</label>
+                                    <mat-form-field appearance="fill">
+                                        <mat-select placeholder="Select Country" >
+                                            <mat-option value="Travel">Travel</mat-option>
+                                            <mat-option value="Student" >Student</mat-option>
+                                          </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Tax Number</label>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput placeholder="Enter Tax number Number">
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-card">
+                                    <label>Currency</label>
+                                    <mat-form-field appearance="fill">
+                                        <input matInput placeholder="Enter Currency">
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="input-card">
+                                    <label>Company Identification Number (CIN)</label>
+                                    <mat-form-field appearance="fill">
+                                        <mat-select placeholder="Select CIN" >
+                                            <mat-option value="Travel">Travel</mat-option>
+                                            <mat-option value="Student" >Student</mat-option>
+                                          </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
